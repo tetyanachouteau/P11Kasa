@@ -1,0 +1,11 @@
+.back {
+    background-color: blanchedalmond; 
+    border: 1px solid red;
+    padding: 20px; 
+  }
+ 
+.front {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); 
+    font-size: 24px; 
+    color: blue; 
+  }
