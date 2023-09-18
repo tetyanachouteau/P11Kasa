@@ -1,9 +1,12 @@
+
 function Info() {
     return (
-      <div className="Info">
-        <h1>INFO</h1>
-        <p className='Text'>Test Info</p>
+      <div>
+        <h1>Page - INFO</h1>
+        <p >Page - Info fin </p>
+       
       </div>
+     
     );
   }
   

@@ -1,16 +1,21 @@
-import React from "react";
 import { Routes, Route, Link } from 'react-router-dom';
-
 import Accueil from "./pages/accueil";
 import Info from "./pages/info";
 import Location from "./pages/location";
 import Erreur from "./pages/erreur";
 
+
+
 function App() {
+ 
+    //fetch("http://localhost:3000/data/logement.json")
+    
   return (
+
+    
     <div className="App">
-      <h1>BonjourAccueil</h1>
       <header>
+         header debut
         <nav>
           <ul>
             <li>
@@ -27,14 +32,26 @@ function App() {
             </li>
           </ul>
         </nav>
+         header fin
       </header>
+
       <Routes>
         <Route path="/" element={<Accueil />} />
         <Route path="/info" element={<Info />} />
         <Route path="/location" element={<Location />} />
         <Route path="/erreur" element={<Erreur />} />
       </Routes>
+<main>
+      Main debut
+      <h1>For Selling</h1>
+      Main fin
+  </main>
+      <footer>
+       <p>footer debut</p>
+       footer fin
+      </footer>
     </div>
+    
   );
 }
 

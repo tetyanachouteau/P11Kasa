@@ -1,8 +1,8 @@
 function Location() {
     return (
-      <div className="Location">
-        <h1>LOCATION</h1>
-        <p className='Text'>Test Location</p>
+      <div >
+        <h1>Page - LOCATION</h1>
+        <p >Page - Location fin</p>
       </div>
     );
   }

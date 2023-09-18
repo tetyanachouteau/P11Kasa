@@ -1,8 +1,8 @@
 function Erreur() {
     return (
-      <div className="Erreur">
-        <h1>ERREUR</h1>
-        <p className='Text'>Test Erreur</p>
+      <div>
+        <h1>Page - ERREUR</h1>
+        <p>Page - ERREUR fin</p>
       </div>
     );
   }

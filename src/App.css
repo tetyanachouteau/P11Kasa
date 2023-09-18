@@ -1,37 +1,58 @@
-.App {
-  text-align: center;
+/* Styles de base pour les éléments communs à toutes les pages */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styles pour les en-têtes */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Styles pour les liens de navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+/* Styles pour le contenu principal */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styles pour les écrans de petite taille (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 5px;
+  }
+  
+  nav ul li {
+    margin-right: 10px;
+  }
+  
+  .main-content {
+    padding: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Styles pour les écrans de grande taille (ordinateurs de bureau) (min-width: 1025px) */
+@media (min-width: 1025px) {
+  nav ul li {
+    margin-right: 30px;
   }
-  to {
-    transform: rotate(360deg);
-  }}
+  
+  .main-content {
+    padding: 30px;
+  }
+}
