@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Card() {
-  const title = "Titre de logement";
+  const title = "Card: Titre de logement";
   const description = "Description de la carte";
   const cover = "url_de_l_image.jpg";
   const equipments = ["Équipement 1", "Équipement 2", "Équipement 3"];

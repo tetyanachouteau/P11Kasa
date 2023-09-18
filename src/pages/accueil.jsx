@@ -5,8 +5,9 @@ function Accueil() {
     return (
       <div>
         <h1>Page - ACCUEIL</h1>
-        <p>Page - ACCUEIL fin </p>
+        
         <Card />
+        <p>Page - ACCUEIL fin </p>
       </div>
      
     );

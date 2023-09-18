@@ -32,8 +32,9 @@ function App() {
             </li>
           </ul>
         </nav>
-         header fin
-      </header>
+         
+        header fin
+        </header>
 
       <Routes>
         <Route path="/" element={<Accueil />} />
@@ -41,11 +42,8 @@ function App() {
         <Route path="/location" element={<Location />} />
         <Route path="/erreur" element={<Erreur />} />
       </Routes>
-<main>
-      Main debut
-      <h1>For Selling</h1>
-      Main fin
-  </main>
+
+      
       <footer>
        <p>footer debut</p>
        footer fin
