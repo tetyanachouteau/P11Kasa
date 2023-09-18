@@ -1,7 +1,9 @@
-function Card() {
-    return (
-        <h1>card</h1>
-    );
-}
+function Card () {
+  return (
+    <div>
+      <h1>Card</h1>
+    </div>
+      ); 
+    }
 
-export default Card;
+      export default Card;

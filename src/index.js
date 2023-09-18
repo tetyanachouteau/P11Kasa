@@ -1,16 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import { BrowserRouter } from "react-router-dom";
 import App from './App';
-import Accueil from './pages/accueil'
+import './index.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+const root = document.getElementById('root');
+
+ReactDOM.createRoot(root).render(
   <React.StrictMode>
-    <Router>
-      <App>
-        <Route exact path="/" component={Accueil} /> {/* Page d'accueil */}
-      </App>
-    </Router>
+    <BrowserRouter>
+    <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
