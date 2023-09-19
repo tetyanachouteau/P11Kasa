@@ -1,0 +1,26 @@
+ nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+
+  .navigation {
+    background-color: #e61190;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .navigation p {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .navigation ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  
+  
+  
