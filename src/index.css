@@ -29,6 +29,10 @@ header {
   color: #fff;
   padding: 10px;
 }
+.logo {
+  width: 100px;
+  height: 50px;
+}
 
 /* Styles pour les liens de navigation */
 nav ul {

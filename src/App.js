@@ -4,7 +4,7 @@ import Info from "./pages/info";
 import Location from "./pages/location";
 import Erreur from "./pages/erreur";
 import Footer from './components/Footer';
-
+import logo from "./images/logo192.png";
 
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
     
     <div className="App">
       <header>
-         header debut
+        header debut
+        <img src={logo} alt="Logo de logement" className="logo" />
         <nav>
           <ul>
             <li>
