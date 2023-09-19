@@ -5,32 +5,6 @@ body {
   padding: 0;
 }
 
-/* Styles pour les en-têtes */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-/* Styles pour les liens de navigation */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-/* Styles pour le contenu principal */
-.main-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
 /* Styles pour les écrans de petite taille (max-width: 768px) */
 @media (max-width: 768px) {
   header {

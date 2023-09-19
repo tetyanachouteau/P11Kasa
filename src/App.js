@@ -3,6 +3,7 @@ import Accueil from "./pages/accueil";
 import Info from "./pages/info";
 import Location from "./pages/location";
 import Erreur from "./pages/erreur";
+import Footer from './components/Footer';
 
 
 
@@ -43,11 +44,7 @@ function App() {
         <Route path="/erreur" element={<Erreur />} />
       </Routes>
 
-      
-      <footer>
-       <p>footer debut</p>
-       footer fin
-      </footer>
+      <Footer/>
     </div>
     
   );

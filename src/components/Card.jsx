@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from "./Card.module.css"
 
 function Card() {
   const title = "Card: Titre de logement";
@@ -14,7 +15,9 @@ function Card() {
   const location = "Emplacement de la carte";
 
   return (
-    <div className="card">
+    
+    <div className={styles.card}>
+      
       <h2>{title}</h2>
       <p>{description}</p>
       <img src={cover} />
