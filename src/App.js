@@ -5,15 +5,10 @@ import Location from "./pages/location";
 import Erreur from "./pages/erreur";
 import Footer from './components/Footer';
 import logo from "./images/logo192.png";
-
+import Layout from './components/Layout';
 
 function App() {
- 
-    //fetch("http://localhost:3000/data/logement.json")
-    
   return (
-
-    
     <div className="App">
       <header>
         header debut
@@ -24,30 +19,37 @@ function App() {
               <Link to="/">Accueil</Link>
             </li>
             <li>
-              <a href="/info">Info</a>
+              <Link to="/info">Info</Link>
             </li>
             <li>
-              <a href="/location">Location</a>
+              <Link to="/location">Location</Link>
             </li>
             <li>
-              <a href="/erreur">Erreur</a>
+              <Link to="/erreur">Erreur</Link>
             </li>
           </ul>
         </nav>
-         
         header fin
-        </header>
+      </header>
 
       <Routes>
-        <Route path="/" element={<Accueil />} />
-        <Route path="/info" element={<Info />} />
-        <Route path="/location" element={<Location />} />
-        <Route path="/erreur" element={<Erreur />} />
+        <Route
+          path="/"
+          element={<Layout />}
+        >
+          <Route path="/" element={<Accueil />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/erreur" element={<Erreur />} />
+        </Route>
       </Routes>
 
-      <Footer/>
+      <main>
+        <article></article>
+      </main>
+      
+      <Footer />
     </div>
-    
   );
 }
 
