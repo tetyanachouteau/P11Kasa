@@ -1,11 +1,24 @@
+import { Routes, Route} from 'react-router-dom';
+import Accueil from "./pages/accueil";
+import Info from "./pages/info";
+import Location from "./pages/location";
+import Erreur from "./pages/erreur";
 
-import './App.css';
+import Layout from './components/Layout';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="Css">CSS</h1>
-      <p>Test1</p>
+      <Routes>
+        <Route path="/" element={<Layout />}
+        >
+          <Route path="/" element={<Accueil />} />
+          <Route path="/info" element={<Info />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/erreur" element={<Erreur />} />
+        </Route>
+      </Routes>
+
     </div>
   );
 }

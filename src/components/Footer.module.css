@@ -1,0 +1,10 @@
+.footer {
+    background-color: #e61190;
+    color: #fff;
+    padding: 20px;
+  }
+  .footer p {
+    max-width: 100%;
+    height: auto;
+  }
+  
