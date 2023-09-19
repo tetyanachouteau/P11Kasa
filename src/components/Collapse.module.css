@@ -1,10 +1,10 @@
-.back {
+.collapse {
     background-color: rgb(150, 112, 54); 
     border: 5px solid rgb(123, 0, 255);
     padding: 80px; 
   }
  
-.front {
+.text {
     text-shadow: 3px 3px 5px rgba(220, 91, 91, 0.5); 
     font-size: 32px; 
     color: rgb(0, 255, 64); 
