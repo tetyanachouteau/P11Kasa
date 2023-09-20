@@ -1,10 +1,14 @@
 import styles from "./Erreur.module.css"
+import Erreurroot from "./Erreurroot";
 
 function Erreur() {
     return (
+        
         <div className={styles.erreur}>
-            
-            <p className={styles.text}>Erreur de tout</p>
+            Erreur debut
+            <Erreurroot/>
+            Erreurfin
+            <p className={styles.text}>Erreur</p>
             
         </div>
     );

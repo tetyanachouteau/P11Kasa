@@ -4,7 +4,7 @@ function Erreurroot() {
     return (
         <div className={styles.erreurroot}>
             
-            <p className={styles.text}>Erreur de tout</p>
+            <p className={styles.text}>Erreur de root</p>
             
         </div>
     );

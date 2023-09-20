@@ -1,13 +1,12 @@
-import Collapse from '../components/Collapse';
+import Collapse from "../components/Collapse";
+
 function Info() {
     return (
       <div>
         <h1>Page - INFO</h1>
-
-        <Collapse />
-        
+        <Collapse/>
         <p >Page - Info fin </p>
-       
+      
       </div>
      
     );
