@@ -1,10 +1,11 @@
-//import styles from "./Navigation.module.css"
+import Erreurroot from "../components/Erreurroot";
+//import styles from "./Erreur.module.css"
 function Erreur() {
     return (
       <div>
         Page - ERREUR
 
-        <Erreur/>
+        <Erreurroot/>
         Page - ERREUR fin
       </div>
     );

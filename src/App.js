@@ -3,7 +3,7 @@ import Accueil from "./pages/accueil";
 import Info from "./pages/info";
 import Location from "./pages/location";
 import Erreur from "./components/Erreur";
-
+//import Erreurroot from "./components/Erreurroot";
 import Layout from './components/Layout';
 
 function App() {
