@@ -15,9 +15,6 @@ function Navigation() {
             <li>
               <Link to="/location">Location</Link>
             </li>
-            <li>
-              <Link to="/erreur">Erreur</Link>
-            </li>
           </ul>
           <p>Navigation MENU fin </p>
         </div>

@@ -1,8 +1,11 @@
+//import styles from "./Navigation.module.css"
 function Erreur() {
     return (
       <div>
-        <h1>Page - ERREUR</h1>
-        <p>Page - ERREUR fin</p>
+        Page - ERREUR
+
+        <Erreur/>
+        Page - ERREUR fin
       </div>
     );
   }
