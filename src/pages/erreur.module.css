@@ -1,0 +1,12 @@
+.erreur {
+    background-color: #7111e6;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .erreur p {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
