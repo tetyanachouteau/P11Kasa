@@ -1,23 +1,9 @@
-import { Routes, Route} from 'react-router-dom';
-import Accueil from "./pages/accueil";
-import Info from "./pages/info";
-import Location from "./pages/location";
-import Erreur from "./components/Erreur";
-//import Erreurroot from "./components/Erreurroot";
-import Layout from './components/Layout';
 
+import RootsPages from "./components/RootsPages";
 function App() {
   return (
     <div className="App">
-      <Routes>
-        <Route path="/" element={<Layout />}
-        >
-          <Route path="/" element={<Accueil />} />
-          <Route path="/info" element={<Info />} />
-          <Route path="/location" element={<Location />} />
-          <Route path="*" element={<Erreur />} />
-        </Route>
-      </Routes>
+      <RootsPages/>
 
     </div>
   );
