@@ -6,12 +6,12 @@ function Navigation() {
     <div className={styles.navigation}>
       <ul>
         <li>
-          <NavLink exact to="/" activeClassName={styles.activeLink}>
+          <NavLink exact to="/" className={({isActive}) => (isActive ? styles.activeLink : "")}>
             Accueil
           </NavLink>
         </li>
         <li>
-          <NavLink to="/info" activeClassName={styles.activeLink}>
+          <NavLink to="/info" className={({isActive}) => (isActive ? styles.activeLink : "")}>
             Info
           </NavLink>
         </li>

@@ -8,6 +8,7 @@
     font-family: 'Montserrat';
     font-size: 24px;
     color: #FF6060;
+    text-decoration:none;
   }
 
   .navigation ul li {
@@ -16,8 +17,7 @@
   }
   
   .activeLink {
-    font-weight: bold;
-    color: rgb(0, 8, 255);
+    text-decoration:underline !important;
   }
   
   
