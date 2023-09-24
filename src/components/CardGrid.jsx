@@ -1,12 +1,13 @@
 import styles from "./CardGrid.module.css"
 import Card from "./Card";
-function CardGrid() {
+function CardGrid(props) {
     return (
         <div className={styles.cardgrid}>
-            <p>CardGrid debut</p>
-            <p >CardGrid</p>
-            <p>CardGrid fin</p>
-            <Card/>
+            {props.data.map((logement) => (
+                <div key={logement.id} className={styles.card}>
+                    <Card data={logement} />
+                </div>
+            ))}
         </div>
     );
 }
