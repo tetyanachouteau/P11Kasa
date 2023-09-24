@@ -1,11 +1,25 @@
 .collapse {
-    background-color: rgb(150, 112, 54); 
-    border: 5px solid rgb(123, 0, 255);
-    padding: 80px; 
-  }
- 
-.text {
-    text-shadow: 3px 3px 5px rgba(220, 91, 91, 0.5); 
-    font-size: 32px; 
-    color: rgb(0, 255, 64); 
-  }
+  display: block;
+}
+
+.collapse .entete {
+  background: #FF6060;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapse .collapse-container {
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.collapse .collapsed-content {
+  display: none;
+}
