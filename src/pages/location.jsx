@@ -4,7 +4,7 @@ function Location() {
     return (
       <div >
         <h1>Page - LOCATION</h1>
-        <Slideshow images={['image1.jpg', 'image2.jpg', 'image3.jpg']}/>
+        <Slideshow images={['/images/Background1.png', '/images/Background2.png', '/images/Background3.png']}/>
         <p >Page - Location fin</p>
       </div>
     );
