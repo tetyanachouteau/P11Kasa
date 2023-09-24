@@ -1,0 +1,14 @@
+.accueil .titre {
+    font-family: Montserrat;
+    height: 223px;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    background-image: url("../images/fond.png");
+    background-repeat: no-repeat; /* Évite la répétition de l'image */
+    background-position: center center; /* Centre l'image horizontalement et verticalement */
+    background-size: cover;
+}

@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom';
 function Navigation() {
   return (
     <div className={styles.navigation}>
-      <p>Navigation MENU: </p>
       <ul>
         <li>
           <NavLink exact to="/" activeClassName={styles.activeLink}>
@@ -16,13 +15,7 @@ function Navigation() {
             Info
           </NavLink>
         </li>
-        <li>
-          <NavLink to="/location" activeClassName={styles.activeLink}>
-            Location
-          </NavLink>
-        </li>
       </ul>
-      <p>Navigation MENU fin </p>
     </div>
   );
 }
