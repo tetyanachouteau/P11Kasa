@@ -1,13 +1,10 @@
 .header {
-    background-color: #e61190;
-    color: #fff;
-    padding: 10px;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .header p {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  
-  
+.header img {
+  width: 210px;
+  height: 68px;
+}

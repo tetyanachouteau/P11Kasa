@@ -4,10 +4,8 @@ function Header() {
 
         return (
             <div className={styles.header}>
-        <p>header debut</p>
-        <Navigation/>
-        <p>header fin</p>
-    
+                <img src="/LOGO.png" alt="Logo Kasa"></img>
+                <Navigation/>
             </div>
         );
     }
