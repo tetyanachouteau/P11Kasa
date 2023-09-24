@@ -7,9 +7,9 @@ function Accueil() {
   return (
     <div>
       <h1>Page - ACCUEIL</h1>
-      <div className={styles['cardgrid']}>
-        {data.map((logement, index) => (
-          <div key={index} className={styles.card}>
+      <div className={styles.cardgrid}>
+        {data.map((logement) => (
+          <div key={logement.id} className={styles.card}>
             <Card data={logement} />
           </div>
         ))}
