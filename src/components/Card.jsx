@@ -8,9 +8,8 @@ function Card({ data }) {
   return (
     <div className={styles.card}>
       <NavLink exact to={ "/location/" + id} activeClassName={styles.activeLink}>
-      <h2>{title}</h2>
-    
       <img src={cover} alt={title} />
+      <h2>{title}</h2>
       </NavLink>
     </div>
   );
