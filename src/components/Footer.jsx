@@ -4,12 +4,15 @@ function Footer() {
 
         return (
             <div className={styles.footer}>
-                <p>footer debut</p>
-                <p >Footer</p>
-                <p>footer fin</p>
+                <img src="/LOGO2.png" alt="Logo Kasa"></img>
+                <p>© 2020 Kasa. All rights reserved</p>
             </div>
+
         );
     }
  
 
 export default Footer;
+
+
+            
