@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Collapse.module.css'; // Importez votre fichier CSS pour gérer le style
 
-function Collapse(props) {
+function Collapse({ entete, children }) {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const toggleCollapse = () => {
@@ -10,14 +10,13 @@ function Collapse(props) {
 
     return (
         <div className={styles.collapse}>
-            {isCollapsed ? (
-                <div className={styles.entete}>{props.entete}<img onClick={toggleCollapse} src="/images/collapsed.png" alt="collaped"></img></div>
-            ) : (
-                <div className={styles.entete}>{props.entete}<img onClick={toggleCollapse} src="/images/uncollapsed.png" alt="uncollaped"></img></div>
-            )}
+             <div className={styles.entete}>{entete}
+            
+               <img onClick={toggleCollapse} src= {isCollapsed ? ("/images/collapsed.png") : ("/images/uncollapsed.png")} alt="collaped"/>
+            </div>
             <div className="collapse-content">
                 {isCollapsed ? null : (
-                    props.children
+                    children
                 )}
             </div>
         </div>
