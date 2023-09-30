@@ -1,12 +1,31 @@
 .erreur {
     background: #FFFFFF;
-    
-    color: #fff;
-   max-width:1440px;
-max-height:1213px;
-top: 2193px;
-left: -543px;
-padding: 40px, 0px, 0px, 0px;
-gap: 139px;
   }
+.erreur p{
+    color: #FF6060;
+    font-family: Montserrat;
+font-size: 36px;
+font-weight: 500;
+line-height: 51px;
+letter-spacing: 0em;
+text-align: left;
 
+  }
+  .erreur NavLink{
+    color: #FF6060;
+  }
+.erreur img{
+  width: 597px;
+  height: 263px;
+}
+
+a {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  color: #FF6060;
+  text-decoration:none;
+}
+
+.activeLink {
+  text-decoration:underline !important;
+}
