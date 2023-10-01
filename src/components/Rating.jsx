@@ -11,7 +11,7 @@ function Rating({rating}) {
   ));
 
     return (
-      <div >
+      <div>
         {starsActive}{starsInactive}
       </div>
     );

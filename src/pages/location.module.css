@@ -1,0 +1,20 @@
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.profil {
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.mid {
+    flex-basis: 50%
+}
