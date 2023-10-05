@@ -12,7 +12,7 @@ function Navigation() {
         </li>
         <li>
           <NavLink to="/info" className={({isActive}) => (isActive ? styles.activeLink : "")}>
-            Info
+            A propos
           </NavLink>
         </li>
       </ul>
