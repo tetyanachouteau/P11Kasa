@@ -1,13 +1,10 @@
 .cardgrid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: -8px; 
+    gap: 50px;
   }
   
   .card {
     text-align: left;
-    flex: calc(33.33% - 16px);
-    margin: 8px; 
-    
+    flex-basis: calc(30% - 10px);
   }
