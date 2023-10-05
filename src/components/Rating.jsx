@@ -1,4 +1,4 @@
-import styles from "./Rating.module.css"
+//import styles from "./Rating.module.css"
 
 function Rating({rating}) {
     

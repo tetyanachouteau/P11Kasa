@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
 import Slideshow from "../components/Slideshow";
 import data from '../data/logement.json';
 import Collapse from "../components/Collapse";
@@ -10,6 +10,8 @@ function Location() {
   let { id } = useParams()
 
   let logement = data.find(el => el.id === id)
+
+  if(logement){
 
   return (
     <div className={styles.location} >
@@ -35,6 +37,9 @@ function Location() {
       </div>
     </div>
   );
+  }else{
+    return <Navigate to="/erreur" />
+  }
 }
 
 export default Location;
