@@ -2,18 +2,21 @@
   background-repeat: no-repeat;
   /* Évite la répétition de l'image */
   background-position: center center;
+  background-blend-mode: darken;
   /* Centre l'image horizontalement et verticalement */
   background-size: cover;
   text-align: center;
   border-radius: 25px;
   height: 223px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
   font-family: Montserrat;
-  font-size: 2rem;
+  font-size: 48px;
   font-weight: 500;
-  letter-spacing: 0em;
-  text-align: left;
   color: #FFFFFF;
 }
