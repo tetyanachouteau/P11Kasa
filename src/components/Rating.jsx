@@ -2,12 +2,12 @@
 
 function Rating({rating}) {
     
-  const starsActive = Array.from({ length: rating }, (index) => (
-    <img key={"star-active" + index} src="../images/star-active.png" alt="star-active"/>
+  const starsActive = Array.from({ length: rating }, (el, index) => (
+    <img key={"starActive" + index} src="../images/star-active.png" alt="star-active"/>
   ));
 
-  const starsInactive = Array.from({ length: 5 - rating }, (index) => (
-    <img key={"star-inactive" + index} src="../images/star-inactive.png" alt="star-inactive"/>
+  const starsInactive = Array.from({ length: 5 - rating }, (el, index) => (
+    <img key={"starInactive" + index} src="../images/star-inactive.png" alt="star-inactive"/>
   ));
 
     return (

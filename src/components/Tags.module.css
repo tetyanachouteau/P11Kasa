@@ -1,2 +1,20 @@
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px 0;
+}
 
-
+.tags .tag {
+    background-color: #FF6060;
+    border-radius: 10px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 115px;
+}

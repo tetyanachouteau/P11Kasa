@@ -3,10 +3,10 @@ import Navigation from './Navigation';
 function Header() {
 
         return (
-            <div className={styles.header}>
+            <header className={styles.header}>
                 <img src="/LOGO.png" alt="Logo Kasa"></img>
                 <Navigation/>
-            </div>
+            </header>
         );
     }
  

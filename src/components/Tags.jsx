@@ -4,8 +4,8 @@ function Tags({tags}) {
     
 
     return (
-      <div >
-        {tags.map(el => <div className={styles.tag}>{el}</div>)}
+      <div className={styles.tags}>
+        {tags.map( (el,index) => <div key={"tag" + index} className={styles.tag}>{el}</div>)}
       </div>
     );
   }
