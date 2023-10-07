@@ -8,9 +8,9 @@ function CardGrid({ data }) {
   return (
     <div className={styles.cardgrid}>
       {data.map((logement) => (
-        <div key={logement.id} className={styles.card}>
-          <Card data={logement} />
-        </div>
+  
+          <Card data={logement} key={logement.id} />
+      
       ))}
     </div>
   );

@@ -14,11 +14,10 @@ function Collapse({ entete, children, className }) {
 
                 <img onClick={toggleCollapse} src={isCollapsed ? ("/images/collapsed.png") : ("/images/uncollapsed.png")} alt="collaped" />
             </div>
-            <div className="collapse-content">
-                {isCollapsed ? null : (
-                    children
-                )}
-            </div>
+            {isCollapsed ? null : (
+                <div className={styles.collapseContent}>{children}</div>
+            )}
+
         </div>
     );
 }

@@ -6,13 +6,16 @@ function Card({ data }) {
   const { title, cover, id } = data;
 
   const background = {
-    "background-image": "url(" + cover + ")"
+    "backgroundImage": "url(" + cover + ")"
   }
 
   return (
-    <Link exact to={ "/location/" + id} className={styles.card} style={background}>
+    <div  className={styles.cardContener}>
+    <Link to={ "/location/" + id} className={styles.card} style={background}>
       <h2>{title}</h2>
     </Link>
+
+</div>
   );
 }
 

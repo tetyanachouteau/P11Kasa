@@ -6,7 +6,7 @@ function Navigation() {
     <div className={styles.navigation}>
       <ul>
         <li>
-          <NavLink exact to="/" className={({isActive}) => (isActive ? styles.activeLink : "")}>
+          <NavLink to="/" className={({isActive}) => (isActive ? styles.activeLink : "")}>
             Accueil
           </NavLink>
         </li>

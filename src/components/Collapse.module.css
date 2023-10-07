@@ -7,19 +7,31 @@
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
-  line-height: 26px;
+  line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
   display: flex;
   justify-content: space-between;
+  border-radius: 5px;
+  padding: 0 10px;
+  z-index: 1;
+  position: relative;
 }
 
-.collapse .collapse-container {
-  border: 1px solid #ccc;
-  padding: 16px;
+.collapse .entete img {
+  width: 32px;
+  height: 32px;
 }
 
-.collapse .collapsed-content {
-  display: none;
+.collapse .collapseContent {
+  background-color: #F6F6F6;
+  color: #FF6060;
+  margin-top: -5px;
+  padding: 25px 10px 20px 10px ;
+  border-radius: 5px;
+}
+
+.collapse .collapseContent p {
+  margin: 0;
 }
