@@ -18,12 +18,8 @@ function Slideshow({ images }) {
     <div className={styles.slideshow}>
       {images.length > 1 && (
         <>
-          <button className={styles.prevButton} onClick={prevSlide}>
-            &lt;
-          </button>
-          <button className={styles.nextButton} onClick={nextSlide}>
-            &gt;
-          </button>
+          <img className={styles.prevButton} onClick={prevSlide} alt='prev' src='/images/left.png'></img>
+          <img className={styles.nextButton} onClick={nextSlide} alt='next' src='/images/right.png'></img>
         </>
       )}
       <div className={styles.slideContainer}>
@@ -39,7 +35,7 @@ function Slideshow({ images }) {
         ))}
       </div>
       {images.length > 1 && (
-        <div className={styles.slideNumber}>{currentSlide + 1}</div>
+        <div className={styles.slideNumber}>{currentSlide + 1}/{images.length}</div>
       )}
     </div>
   );
