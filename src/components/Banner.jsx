@@ -3,7 +3,7 @@ import styles from './Banner.module.css';
 
 function Banner({ title, image }) {
   const background = {
-    backgroundImage: "url(" + image + ")"
+    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(" + image + ")"
   } 
 
   return (

@@ -24,7 +24,7 @@ function Location() {
           </div>
           <div>
             <div className={styles.profil}>
-              <h2>{logement.host.name}</h2>
+              <h2>{logement.host.name.split(" ").map((el,index) => <>{el}<br></br></>  )}</h2>
               <img src={logement.host.picture} alt="profil"></img>
             </div>
             <Rating rating={logement.rating}></Rating>

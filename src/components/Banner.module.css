@@ -2,7 +2,6 @@
   background-repeat: no-repeat;
   /* Évite la répétition de l'image */
   background-position: center center;
-  background-blend-mode: darken;
   /* Centre l'image horizontalement et verticalement */
   background-size: cover;
   text-align: center;
