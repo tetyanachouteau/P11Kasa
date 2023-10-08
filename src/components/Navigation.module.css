@@ -1,23 +1,38 @@
- .navigation ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-   display: flex;
-   gap: 57px;
- }
+.navigation {
+  margin: 15px;
+}
 
- .navigation a {
-   font-family: 'Montserrat';
-   font-size: 24px;
-   color: #FF6060;
-   line-height: 34.22px;
-   text-decoration: none;
- }
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 57px;
+}
 
- .navigation ul li {
-   display: inline;
- }
+.navigation a {
+  font-family: 'Montserrat';
+  font-size: 24px;
+  color: #FF6060;
+  line-height: 34.22px;
+  text-decoration: none;
+}
 
- .navigation .activeLink {
-   text-decoration: underline;
- }
+.navigation ul li {
+  display: inline;
+  white-space: nowrap;
+}
+
+.navigation .activeLink {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .navigation ul {
+    gap: 20px;
+  }
+
+  .navigation a {
+    font-size: 12px;
+  }
+}

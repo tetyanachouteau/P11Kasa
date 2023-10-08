@@ -1,6 +1,8 @@
 .layout {
     margin: 0 auto;
     font-family: 'Montserrat';
+    flex-direction: column;
+    display: flex;
   }
   
   .layout main,header {

@@ -13,9 +13,7 @@
   font-family: Montserrat;
   font-size: 36px;
   font-weight: 500;
-  line-height: 51px;
-  text-align: left;
-
+  text-align: center;
 }
 
 .erreur NavLink {
@@ -23,8 +21,9 @@
 }
 
 .erreur img {
-  width: 597px;
-  height: 263px;
+  max-width: 597px;
+  width: 80%;
+  height: 80%
 }
 
 .erreur a {
@@ -34,4 +33,13 @@
 
 .activeLink {
   text-decoration: underline !important;
+}
+
+@media (max-width: 500px) {
+  .erreur p {
+    font-size: 18px;
+  }
+  .erreur a {
+    font-size: 14px;
+  }
 }
