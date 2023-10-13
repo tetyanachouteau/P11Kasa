@@ -14,9 +14,7 @@ function Collapse({ entete, children, className }) {
 
                 <img onClick={toggleCollapse} src={isCollapsed ? ("/images/collapsed.png") : ("/images/uncollapsed.png")} alt="collaped" />
             </div>
-            {isCollapsed ? null : (
-                <div className={styles.collapseContent}>{children}</div>
-            )}
+            <div className={isCollapsed ? styles.collapseContentHidden : styles.collapseContent}>{children}</div>
 
         </div>
     );
