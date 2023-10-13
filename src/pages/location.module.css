@@ -1,15 +1,18 @@
+/* un conteneur flexible avec une direction de colonne. */
 .location {
     display: flex;
     flex-direction: column;
 }
 
+/* classe "info" à l'intérieur de l'élément avec la classe "location".
+ Il configure ces éléments comme des conteneurs flexibles avec
+ un espacement entre les enfants, une couleur de texte spécifique, et plus. */
 .location .info {
     display: flex;
     justify-content: space-between;
     gap: 40px;
     color: #FF6060;
 }
-
 .location .info h1 {
     font-family: Montserrat;
     font-size: 36px;
@@ -30,6 +33,8 @@
     margin: 0;
 }
 
+/* des conteneurs flexibles avec une direction de ligne,
+ un alignement des éléments et d'autres styles. */
 .location .profil {
     display: flex;
     flex-direction: row;
@@ -54,6 +59,7 @@
     width: 64px;
 }
 
+/* configure ces éléments pour occuper 50% de l'espace disponible. */
 .location .mid {
-    flex-basis: 50%
+    flex-basis: 50%;
 }
