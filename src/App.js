@@ -18,6 +18,7 @@ function App() {
       <Route path="*" element={<Erreur />} />
       
     </Route>
+    <Route path="*" element={<Erreur />} />
   </Routes>
   );
 }

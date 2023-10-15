@@ -12,3 +12,10 @@
   width: 210.32px;
   height: 68px;
 }
+
+@media (max-width: 500px) {
+  .header img {
+    width: 145px;
+    height: 47px;
+  }
+}

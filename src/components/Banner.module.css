@@ -19,3 +19,15 @@
   font-weight: 500;
   color: #FFFFFF;
 }
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .banner {
+    justify-content: flex-start;
+    padding-left: 10px;
+    margin-top: 0;
+  }
+}

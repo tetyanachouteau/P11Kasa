@@ -4,3 +4,11 @@
     gap: 50px;
   }
   
+
+  @media (max-width: 500px) {
+    .cardgrid {
+      flex-wrap:nowrap;
+      gap:initial;
+      flex-direction: column;
+    }
+  }
