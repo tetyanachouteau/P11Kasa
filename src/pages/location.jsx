@@ -28,7 +28,7 @@ function Location() {
             {/* Affichage des tags associés au logement */}
             <Tags tags={logement.tags}></Tags>
           </div>
-          <div>
+          <div className={styles.rateprof}>
             <div className={styles.profil}>
               {/* Affichage du nom de l'hôte avec des sauts de ligne entre les parties du nom */}
               <h2>{logement.host.name.split(" ").map((el, index) => <span key={"name" + index}>{el}<br></br></span>)}</h2>
@@ -38,7 +38,7 @@ function Location() {
             <Rating rating={logement.rating}></Rating>
           </div>
         </div>
-        <div className={styles.info}>
+        <div className={[styles.subinfo, styles.info].join(" ")}>
           <Collapse entete="Description" className={styles.mid}>
             {/* Affichage de la description du logement */}
             <p >{logement.description}</p>

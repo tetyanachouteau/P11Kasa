@@ -4,6 +4,14 @@
     flex-direction: column;
 }
 
+.location h2 {
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    letter-spacing: 0em;
+}
+
 /* classe "info" à l'intérieur de l'élément avec la classe "location".
  Il configure ces éléments comme des conteneurs flexibles avec
  un espacement entre les enfants, une couleur de texte spécifique, et plus. */
@@ -24,11 +32,6 @@
 }
 
 .location .info h2 {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
     text-align: left;
     margin: 0;
 }
@@ -40,16 +43,10 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    min-width: 185px;
     justify-content: right;
 }
 
 .location .profil h2 {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;
     text-align: right;
 }
 
@@ -62,4 +59,38 @@
 /* configure ces éléments pour occuper 50% de l'espace disponible. */
 .location .mid {
     flex-basis: 50%;
+}
+
+@media (max-width: 500px) {
+    .location .info {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .location .rateprof{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .location .info{
+        gap: 10px
+    }
+
+    .location .subinfo{
+        margin-top: 20px;
+    }
+
+    .location .info h1 {
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+    .location h2 {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

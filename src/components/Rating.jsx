@@ -1,3 +1,5 @@
+import styles from "./Rating.module.css"
+
 //Ce composant est utile pour afficher la notation d'un élément 
 //en utilisant des étoiles actives et inactives en fonction 
 //de la valeur de notation passée en prop.
@@ -29,7 +31,7 @@ function Rating({rating}) {
   ));
 
     return (
-      <div>
+      <div className={styles.rating}>
         {starsActive}{starsInactive}
       </div>
     );
