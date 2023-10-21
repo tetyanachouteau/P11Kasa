@@ -56,7 +56,7 @@
     width: 64px;
 }
 
-/* configure ces éléments pour occuper 50% de l'espace disponible. */
+/*  Elément pour occuper 50% de l'espace disponible. */
 .location .mid {
     flex-basis: 50%;
 }
@@ -64,8 +64,10 @@
 .tags {
     display: flex;
     flex-direction: row;
+    /* Utilisation de gap pour définir espace de 10 pixels entre les éléments enfants. */
     gap: 10px;
     margin: 20px 0;
+    /* Permet aux éléments enfants de passer à la ligne suivante lorsque l'espace est insuffisant. */
     flex-wrap: wrap;
 }
 
@@ -75,18 +77,25 @@
         flex-direction: column;
         gap: 20px;
     }
-
-    .location .rateprof{
+    /* Mise en page des éléments des classes : */
+    .location .rateprof {
+        /* Utilisation de Flexbox pour disposer les éléments horizontalement */
         display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: row-reverse; /* Inverse l'ordre des éléments */
+        justify-content: space-between; /* Espace les éléments à l'horizontale */
+        align-items: center; /* Centre les éléments à la verticale */
     }
 
+    {/* <div className={[styles.subinfo, styles.info].join(" ")}> 
+    Pour appliquer plusieurs classes CSS à un élément.
+
+    Cette régle définit marge de 10 pixels (gap) entre ces éléments,
+    ce qui peut affecter disposition des éléments lorsqu'ils sont imbriqués uns dans autres.*/}
     .location .info{
         gap: 10px
     }
-
+    {/* Cette régle ajoute une marge supérieure de 20 pixels à ces éléments, 
+    ce qui peut créer espace entre les éléments portant ces classes.*/}
     .location .subinfo{
         margin-top: 20px;
     }

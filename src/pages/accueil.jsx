@@ -5,9 +5,13 @@ import CardGrid from '../components/CardGrid';
 import Banner from '../components/Banner';
 
 function Accueil() {
+  // Composant "Accueil" affiche bannière et grille de cartes
   return (
     <div className={styles.accueil}>
+      {/* Bannière avec titre et image de fond */}
       <Banner image="../images/fond.png" title="Chez vous, partout et ailleurs" />
+
+      {/* Grille de cartes de logements récupérée à partir du fichier JSON */}
       <CardGrid data={data}></CardGrid>
     </div>
   );

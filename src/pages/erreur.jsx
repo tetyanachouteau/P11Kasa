@@ -2,6 +2,7 @@ import styles from "./erreur.module.css"
 import { Link } from 'react-router-dom';
 
 function Erreur() {
+  // Composant pour afficher une page d'erreur 404
   return (
     <div className={styles.erreur}>
       <img src="./images/404.png" alt="Erreur 404" />

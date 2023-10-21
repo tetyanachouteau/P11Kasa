@@ -6,6 +6,7 @@ function Info() {
     return (
       <div className={styles.info}>
         <Banner image="../images/fond2.png"/>
+        {/* Première section avec le composant Collapse */}
         <Collapse entete="Fiabilité" className={styles.collapse}>
           <p >Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes.</p>
         </Collapse>

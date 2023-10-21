@@ -13,7 +13,7 @@ function App() {
     <Route path="/" element={<Layout />} >
       <Route index element={<Accueil />} />
       <Route path="info" element={<Info />} />
-    {/*comment on fait pour résuperer id?*/}
+    {/*comment on fait pour résuperer id*/}
       <Route path="location/:id" element={<Location />} />
       <Route path="*" element={<Erreur />} />
       
