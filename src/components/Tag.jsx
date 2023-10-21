@@ -1,11 +1,11 @@
 import styles from "./Tag.module.css"
 
-function Tags({ el, index }) {
+function Tag({ el}) {
 
 
     return (
-        <div key={"tag" + index} className={styles.tag}>{el}</div>
+        <div className={styles.tag}>{el}</div>
     );
 }
 
-export default Tags;
+export default Tag;

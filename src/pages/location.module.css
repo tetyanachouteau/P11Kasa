@@ -61,6 +61,14 @@
     flex-basis: 50%;
 }
 
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
 @media (max-width: 500px) {
     .location .info {
         display: flex;

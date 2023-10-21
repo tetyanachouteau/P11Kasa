@@ -3,8 +3,7 @@ import data from '../data/logement.json';
 import styles from "./accueil.module.css";
 import CardGrid from '../components/CardGrid';
 import Banner from '../components/Banner';
-//import image
-//<Banner title="..." img={variable}/> ibid page info ""...
+
 function Accueil() {
   return (
     <div className={styles.accueil}>
@@ -13,5 +12,5 @@ function Accueil() {
     </div>
   );
 }
-//composantBanner= acc et info
+
 export default Accueil;

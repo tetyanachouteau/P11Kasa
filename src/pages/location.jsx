@@ -3,7 +3,7 @@ import { useParams, Navigate } from "react-router-dom";
 import Slideshow from "../components/Slideshow";
 import data from '../data/logement.json';
 import Collapse from "../components/Collapse";
-import Tags from "../components/Tags";
+import Tag from "../components/Tag";
 import Rating from "../components/Rating";
 import styles from "./location.module.css"
 
@@ -26,7 +26,10 @@ function Location() {
             <h1>{logement.title}</h1>
             <h2>{logement.location}</h2>
             {/* Affichage des tags associés au logement */}
-            <Tags tags={logement.tags}></Tags>
+            {/* <Tags tags={logement.tags}></Tags>*/}
+            <div className={styles.tags}>
+              {logement.tags.map((el, key) => <Tag el={el} key={key}></Tag>)}
+            </div>
           </div>
           <div className={styles.rateprof}>
             <div className={styles.profil}>
