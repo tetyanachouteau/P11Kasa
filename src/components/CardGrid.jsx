@@ -6,7 +6,7 @@ import Card from './Card';
 
 // Composant CardGrid : Ce composant génère une grille de cartes en utilisant les données passées en tant que prop "data".
 function CardGrid({ data }) {
-  
+
   return (
     <div className={styles.cardgrid}>
       {data.map((logement) => (

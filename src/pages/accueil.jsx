@@ -1,13 +1,12 @@
 import React from 'react';
 import data from '../data/logement.json';
-import styles from "./accueil.module.css";
 import CardGrid from '../components/CardGrid';
 import Banner from '../components/Banner';
 
 function Accueil() {
   // Composant "Accueil" affiche bannière et grille de cartes
   return (
-    <div className={styles.accueil}>
+    <div>
       {/* Bannière avec titre et image de fond */}
       <Banner image="../images/fond.png" title="Chez vous, partout et ailleurs" />
 
