@@ -21,7 +21,7 @@
   margin: 0 15px 15px 15px;
 }
 
-.cardContener {
+.cardContainer {
   text-align: left;
   flex-basis: calc(30% - 10px);
 }
