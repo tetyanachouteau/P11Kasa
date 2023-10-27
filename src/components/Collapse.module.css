@@ -1,43 +1,49 @@
+/* Style pour la classe "collapse" (la div principale) */
 .collapse {
-  display: block;
+  display: block; /* Affiche l'élément comme un bloc */
 }
 
+/* Style pour la classe "entete" (la partie d'en-tête) */
 .collapse .entete {
-  background: #FF6060;
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 52px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 5px;
-  padding: 0 10px;
-  z-index: 1;
-  position: relative;
+  background: #FF6060; /* Fond de couleur #FF6060 (rouge) */
+  font-family: Montserrat; /* Utilise la police Montserrat */
+  font-size: 18px; /* Taille de police de 18 pixels */
+  font-weight: 500; /* Poids de la police (relativement gras) */
+  line-height: 52px; /* Hauteur de ligne de 52 pixels */
+  letter-spacing: 0em; /* Espacement entre les caractères */
+  text-align: left; /* Alignement du texte à gauche */
+  color: #fff; /* Couleur du texte en blanc (#fff) */
+  display: flex; /* Utilise la mise en page Flexbox */
+  justify-content: space-between; /* Justifie l'espace entre les éléments flex */
+  align-items: center; /* Alignement vertical au centre */
+  border-radius: 5px; /* Coins arrondis de 5 pixels */
+  padding: 0 10px; /* Remplissage de 0 pixels en haut/bas, 10 pixels à gauche/droite */
+  z-index: 1; /* Niveau de l'empilement Z, positionnement en premier plan */
+  position: relative; /* Positionnement relatif: positionnement, mise en forme d'en-tête de la section pliable */
 }
 
+/* Style pour les images à l'intérieur de la classe "entete" */
 .collapse .entete img {
-  width: 32px;
-  height: 32px;
+  width: 32px; /* Largeur de l'image de 32 pixels */
+  height: 32px; /* Hauteur de l'image de 32 pixels */
 }
 
+/* Style pour la classe "collapseContent" (le contenu de la section) */
 .collapse .collapseContent {
-  background-color: #F6F6F6;
-  color: #FF6060;
-  margin-top: -5px;
-  padding: 25px 10px 20px 10px ;
-  border-radius: 5px;
+  background-color: #F6F6F6; /* Fond de couleur #F6F6F6 (gris clair) */
+  color: #FF6060; /* Couleur du texte en rouge (#FF6060) */
+  margin-top: -5px; /* Marge négative en haut de 5 pixels */
+  padding: 25px 10px 20px 10px; /* Remplissage de 25 pixels en haut, 10 pixels à droite/gauche, 20 pixels en bas */
+  border-radius: 5px; /* Coins arrondis de 5 pixels */
 }
 
+/* Style pour la classe "collapseContentHidden" (le contenu masqué) */
 .collapse .collapseContentHidden {
-  visibility: hidden;
-  height: 0;
+  visibility: hidden; /* Masque le contenu en le rendant invisible */
+  height: 0; /* Aucune hauteur, ce qui cache complètement le contenu */
 }
 
+/* Style pour les paragraphes (<p>) à l'intérieur de la classe "collapseContent" */
 .collapse .collapseContent p {
-  margin: 0;
+  margin: 0; /* Supprime les marges autour des paragraphes pour un espacement minimal */
 }

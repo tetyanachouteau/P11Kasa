@@ -1,27 +1,30 @@
+/* Style pour la classe "card" */
 .card {
-  width: 100%;
-  height: 340px;
-  display: block;
-  background-position: center center;
-  border-radius: 10px;
-  display: flex;
-  justify-content: left;
-  align-items: flex-end;
-  text-decoration: none;
-  margin-bottom: 50px;
+  width: 100%; /* Largeur de 100% de la largeur du contenant */
+  height: 340px; /* Hauteur fixe de 340 pixels */
+  display: block; /* Affiche l'élément en tant que bloc */
+  background-position: center center; /* Positionne l'image de fond au centre horizontalement et verticalement */
+  border-radius: 10px; /* Ajoute des coins arrondis de 10 pixels */
+  display: flex; /* Utilise la mise en page Flexbox */
+  justify-content: left; /* Justifie le contenu à gauche */
+  align-items: flex-end; /* Aligne le contenu en bas */
+  text-decoration: none; /* Supprime la soulignement des liens */
+  margin-bottom: 50px; /* Ajoute une marge en bas de 50 pixels */
 }
 
+/* Style pour les éléments <h2> à l'intérieur de la classe "card" */
 .card h2 {
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
-  text-align: left;
-  color: #FFFFFF;
-  margin: 0 15px 15px 15px;
+  font-family: Montserrat; /* Utilise la police Montserrat */
+  font-size: 18px; /* Taille de police de 18 pixels */
+  font-weight: 500; /* Poids de la police (relativement gras) */
+  line-height: 26px; /* Hauteur de ligne de 26 pixels */
+  text-align: left; /* Aligne le texte à gauche */
+  color: #FFFFFF; /* Couleur du texte en blanc (#FFFFFF) */
+  margin: 0 15px 15px 15px; /* Marges (haut, droite, bas, gauche) */
 }
 
+/* Style pour les éléments de classe "cardContainer" */
 .cardContainer {
-  text-align: left;
-  flex-basis: calc(30% - 10px);
+  text-align: left; /* Aligne le texte à gauche */
+  flex-basis: calc(30% - 10px); /* Définit la largeur des éléments en fonction du calcul */
 }

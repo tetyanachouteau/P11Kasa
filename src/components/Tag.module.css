@@ -1,14 +1,16 @@
+/* Style de la classe "tag" */
 .tag {
-    background-color: #FF6060;
-    border-radius: 10px;
-    padding: 5px;
-    color: #FFFFFF;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0em;
-    text-align: center;
-    min-width: 115px;
-    white-space: nowrap;
-}
+    background-color: #FF6060; /* Fond de couleur #FF6060 (rouge) */
+    border-radius: 10px; /* Coins arrondis de 10 pixels */
+    padding: 5px; /* Remplissage de 5 pixels autour du contenu */
+    color: #FFFFFF; /* Couleur du texte en blanc (#FFFFFF) */
+    font-family: Montserrat; /* Utilise la police Montserrat */
+    font-size: 14px; /* Taille de police de 14 pixels */
+    font-weight: 500; /* Poids de la police (relativement gras) */
+    line-height: 20px; /* Hauteur de ligne de 20 pixels */
+    letter-spacing: 0em; /* Espacement entre les caractères */
+    text-align: center; /* Alignement du texte au centre */
+    min-width: 115px; /* Largeur minimale de 115 pixels */
+    white-space: nowrap; /* Empêche le renvoi à la ligne du contenu si nécessaire */
+  }
+  

@@ -1,69 +1,80 @@
+/* Style de la classe "slideshow" */
 .slideshow {
-  position: relative;
-  width: 100%;
-  margin: 20px auto;
+  position: relative; /* Positionnement relatif par rapport à son conteneur parent */
+  width: 100%; /* Largeur de 100% pour occuper tout l'espace disponible */
+  margin: 20px auto; /* Marge de 20 pixels en haut et en bas, centré horizontalement */
 }
 
+/* Style de la classe "slideContainer" */
 .slideContainer {
-  display: flex;
-  overflow: hidden;
+  display: flex; /* Utilisation de la mise en page Flexbox */
+  overflow: hidden; /* Masque tout le contenu qui dépasse de la zone */
 }
 
+/* Style de la classe "slide" */
 .slide {
-  width: 0;
+  width: 0; /* Largeur initiale à zéro, puisqu'il y a plusieurs diapositives */
 }
 
+/* Style des images à l'intérieur de la classe "slide" */
 .slide img {
-  object-fit: cover;
-  /* Ajout de cette propriété pour l'effet "cover" */
-  width: 100%;
-  height: 415px;
-  border-radius: 25px;
+  object-fit: cover; /* Remplit la zone avec l'image sans déformer */
+  width: 100%; /* Largeur de 100% pour remplir la largeur de son conteneur */
+  height: 415px; /* Hauteur fixe de l'image */
+  border-radius: 25px; /* Coins arrondis de 25 pixels */
 }
 
+/* Style de la classe "activeSlide" */
 .activeSlide {
-  width: 100%;
+  width: 100%; /* Largeur à 100% pour afficher la diapositive active */
 }
 
+/* Style des boutons de navigation précédent et suivant */
 .prevButton,
 .nextButton {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
+  position: absolute; /* Position absolue pour placer les boutons hors du flux normal */
+  top: 50%; /* Positionnement vertical au milieu */
+  transform: translateY(-50%); /* Ajuste la position verticale du bouton */
+  cursor: pointer; /* Curseur de la souris change au survol */
 }
 
+/* Style du bouton précédent */
 .prevButton {
-  left: 15px;
-  z-index: 1;
+  left: 15px; /* Position à 15 pixels de la gauche */
+  z-index: 1; /* Niveau de l'empilement Z pour être au-dessus de la diapositive */
 }
 
+/* Style du bouton suivant */
 .nextButton {
-  right: 15px;
-  z-index: 1;
+  right: 15px; /* Position à 15 pixels de la droite */
+  z-index: 1; /* Niveau de l'empilement Z pour être au-dessus de la diapositive */
 }
 
+/* Style du numéro de la diapositive */
 .slideNumber {
-  font-family: Montserrat;
-  position: absolute;
-  bottom: 25px;
-  display: flex;
-  font-weight: 500;
-  justify-content: center;
-  width: 100%;
-  color: white;
-  font-size: 18px;
+  font-family: Montserrat; /* Utilise la police Montserrat */
+  position: absolute; /* Position absolue pour placer le numéro */
+  bottom: 25px; /* Position à 25 pixels du bas */
+  display: flex; /* Utilisation de la mise en page Flexbox */
+  font-weight: 500; /* Poids de la police (relativement gras) */
+  justify-content: center; /* Centre horizontalement le contenu */
+  width: 100%; /* Largeur à 100% pour remplir la largeur de son conteneur */
+  color: white; /* Couleur du texte en blanc */
+  font-size: 18px; /* Taille de police de 18 pixels */
 }
 
+/* Styles pour les écrans étroits (largeur <= 500px) */
 @media (max-width: 500px) {
 
+  /* Ajustements pour les boutons de navigation précédent et suivant */
   .prevButton,
   .nextButton {
-    height: 24px;
-    width: 24px;
+    height: 24px; /* Hauteur de 24 pixels */
+    width: 24px; /* Largeur de 24 pixels */
   }
 
+  /* Ajustements pour les images dans les diapositives */
   .slide img {
-    height: 255px;
+    height: 255px; /* Hauteur de l'image réduite à 255 pixels */
   }
 }

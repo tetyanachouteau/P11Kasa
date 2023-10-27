@@ -1,14 +1,16 @@
+/* Style pour la classe "cardgrid" */
 .cardgrid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-  
+  display: flex; /* Utilise la mise en page Flexbox */
+  flex-wrap: wrap; /* Permet à ses éléments enfants de passer à la ligne si l'espace est insuffisant */
+  gap: 50px; /* Ajoute un espacement de 50 pixels entre les éléments enfants */
+}
 
-  @media (max-width: 500px) {
-    .cardgrid {
-      flex-wrap:nowrap;
-      gap:initial;
-      flex-direction: column;
-    }
+/* Requête média pour les écrans avec une largeur maximale de 500px */
+@media (max-width: 500px) {
+  /* Ajuste les styles lorsque l'écran a une largeur maximale de 500px */
+  .cardgrid {
+    flex-wrap: nowrap; /* Empêche les éléments enfants de passer à la ligne */
+    gap: initial; /* Rétablit l'espacement initial (peut dépendre du navigateur) entre les éléments enfants */
+    flex-direction: column; /* Change la direction d'affichage en colonne */
   }
+}
