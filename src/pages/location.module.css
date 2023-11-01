@@ -91,22 +91,21 @@
         /* Centre les éléments à la verticale */
     }
 
-        {
-        /* <div className={[styles.subinfo, styles.info].join(" ")}> 
+
+    /* <div className={[styles.subinfo, styles.info].join(" ")}> 
     Pour appliquer plusieurs classes CSS à un élément.
 
     Cette régle définit marge de 10 pixels (gap) entre ces éléments,
     ce qui peut affecter disposition des éléments lorsqu'ils sont imbriqués uns dans autres.*/
-    }
+
 
     .location .info {
         gap: 10px
     }
 
-        {
-        /* Cette régle ajoute une marge supérieure de 20 pixels à ces éléments, 
+    /* Cette régle ajoute une marge supérieure de 20 pixels à ces éléments, 
     ce qui peut créer espace entre les éléments portant ces classes.*/
-    }
+
 
     .location .subinfo {
         margin-top: 20px;
